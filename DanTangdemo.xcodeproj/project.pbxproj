@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263B2CCBE9273EC668ACCC8C /* Pods_DanTangdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E60C4C8C33CC5BCF8F0C9 /* Pods_DanTangdemo.framework */; };
 		60AB18B31F0B81A8007E3F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B11F0B81A8007E3F50 /* Main.storyboard */; };
 		60AB18B51F0B81A8007E3F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B41F0B81A8007E3F50 /* Assets.xcassets */; };
 		60AB18B81F0B81A8007E3F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B61F0B81A8007E3F50 /* LaunchScreen.storyboard */; };
@@ -47,6 +48,9 @@
 		60AB18CF1F0B81A8007E3F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60AB18DD1F0B8BB9007E3F50 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60AB18FC1F0B8BDF007E3F50 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68D01E8438B10804F50BE6F7 /* Pods-DanTangdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTangdemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTangdemo/Pods-DanTangdemo.release.xcconfig"; sourceTree = "<group>"; };
+		8358D0F2AB50397B226D2FB9 /* Pods-DanTangdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTangdemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanTangdemo/Pods-DanTangdemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F17E60C4C8C33CC5BCF8F0C9 /* Pods_DanTangdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanTangdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263B2CCBE9273EC668ACCC8C /* Pods_DanTangdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				60AB18C11F0B81A8007E3F50 /* DanTangdemoTests */,
 				60AB18CC1F0B81A8007E3F50 /* DanTangdemoUITests */,
 				60AB18AB1F0B81A8007E3F50 /* Products */,
+				EA24014F6C8DB5AAA25A1AB4 /* Pods */,
+				9A9FA8A193FB20B01CA818E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -357,6 +364,23 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		9A9FA8A193FB20B01CA818E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F17E60C4C8C33CC5BCF8F0C9 /* Pods_DanTangdemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA24014F6C8DB5AAA25A1AB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8358D0F2AB50397B226D2FB9 /* Pods-DanTangdemo.debug.xcconfig */,
+				68D01E8438B10804F50BE6F7 /* Pods-DanTangdemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,9 +388,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60AB18D21F0B81A8007E3F50 /* Build configuration list for PBXNativeTarget "DanTangdemo" */;
 			buildPhases = (
+				D4808CC33311C8E24E6AD25E /* [CP] Check Pods Manifest.lock */,
 				60AB18A61F0B81A8007E3F50 /* Sources */,
 				60AB18A71F0B81A8007E3F50 /* Frameworks */,
 				60AB18A81F0B81A8007E3F50 /* Resources */,
+				CC5B948329CEC9ED835563BD /* [CP] Embed Pods Frameworks */,
+				D32E3795E8F8BDE7EED330A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -488,6 +515,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC5B948329CEC9ED835563BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DanTangdemo/Pods-DanTangdemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DanTangdemo/Pods-DanTangdemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D32E3795E8F8BDE7EED330A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DanTangdemo/Pods-DanTangdemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4808CC33311C8E24E6AD25E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DanTangdemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60AB18A61F0B81A8007E3F50 /* Sources */ = {
@@ -645,6 +736,7 @@
 		};
 		60AB18D31F0B81A8007E3F50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8358D0F2AB50397B226D2FB9 /* Pods-DanTangdemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2L77PU3GK2;
@@ -658,6 +750,7 @@
 		};
 		60AB18D41F0B81A8007E3F50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D01E8438B10804F50BE6F7 /* Pods-DanTangdemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2L77PU3GK2;
