@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60AB18AE1F0B81A8007E3F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18AD1F0B81A8007E3F50 /* AppDelegate.swift */; };
-		60AB18B01F0B81A8007E3F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18AF1F0B81A8007E3F50 /* ViewController.swift */; };
 		60AB18B31F0B81A8007E3F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B11F0B81A8007E3F50 /* Main.storyboard */; };
 		60AB18B51F0B81A8007E3F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B41F0B81A8007E3F50 /* Assets.xcassets */; };
 		60AB18B81F0B81A8007E3F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B61F0B81A8007E3F50 /* LaunchScreen.storyboard */; };
 		60AB18C31F0B81A8007E3F50 /* DanTangdemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18C21F0B81A8007E3F50 /* DanTangdemoTests.swift */; };
 		60AB18CE1F0B81A8007E3F50 /* DanTangdemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18CD1F0B81A8007E3F50 /* DanTangdemoUITests.swift */; };
+		60AB18FA1F0B8BB9007E3F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18DD1F0B8BB9007E3F50 /* AppDelegate.swift */; };
+		60AB18FD1F0B8BDF007E3F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18FC1F0B8BDF007E3F50 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,6 @@
 
 /* Begin PBXFileReference section */
 		60AB18AA1F0B81A8007E3F50 /* DanTangdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanTangdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		60AB18AD1F0B81A8007E3F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60AB18AF1F0B81A8007E3F50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		60AB18B21F0B81A8007E3F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60AB18B41F0B81A8007E3F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60AB18B71F0B81A8007E3F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		60AB18C91F0B81A8007E3F50 /* DanTangdemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanTangdemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AB18CD1F0B81A8007E3F50 /* DanTangdemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTangdemoUITests.swift; sourceTree = "<group>"; };
 		60AB18CF1F0B81A8007E3F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60AB18DD1F0B8BB9007E3F50 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60AB18FC1F0B8BDF007E3F50 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,7 @@
 		60AB18AC1F0B81A8007E3F50 /* DanTangdemo */ = {
 			isa = PBXGroup;
 			children = (
-				60AB18AD1F0B81A8007E3F50 /* AppDelegate.swift */,
-				60AB18AF1F0B81A8007E3F50 /* ViewController.swift */,
+				60AB18DB1F0B8BB9007E3F50 /* Classes */,
 				60AB18B11F0B81A8007E3F50 /* Main.storyboard */,
 				60AB18B41F0B81A8007E3F50 /* Assets.xcassets */,
 				60AB18B61F0B81A8007E3F50 /* LaunchScreen.storyboard */,
@@ -123,6 +122,239 @@
 				60AB18CF1F0B81A8007E3F50 /* Info.plist */,
 			);
 			path = DanTangdemoUITests;
+			sourceTree = "<group>";
+		};
+		60AB18DB1F0B8BB9007E3F50 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				60AB18DC1F0B8BB9007E3F50 /* AppDelegate */,
+				60AB18DE1F0B8BB9007E3F50 /* Classify(分类) */,
+				60AB18E31F0B8BB9007E3F50 /* DanTang(单糖) */,
+				60AB18E81F0B8BB9007E3F50 /* Main */,
+				60AB18ED1F0B8BB9007E3F50 /* Me(我) */,
+				60AB18F21F0B8BB9007E3F50 /* Others */,
+				60AB18F31F0B8BB9007E3F50 /* Product(单品) */,
+				60AB18F81F0B8BB9007E3F50 /* Resource */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		60AB18DC1F0B8BB9007E3F50 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				60AB18DD1F0B8BB9007E3F50 /* AppDelegate.swift */,
+				60AB18FC1F0B8BDF007E3F50 /* ViewController.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		60AB18DE1F0B8BB9007E3F50 /* Classify(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				60AB18DF1F0B8BB9007E3F50 /* Controller */,
+				60AB18E01F0B8BB9007E3F50 /* Model */,
+				60AB18E11F0B8BB9007E3F50 /* View */,
+				60AB18E21F0B8BB9007E3F50 /* ViewModel */,
+			);
+			path = "Classify(分类)";
+			sourceTree = "<group>";
+		};
+		60AB18DF1F0B8BB9007E3F50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60AB18E01F0B8BB9007E3F50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60AB18E11F0B8BB9007E3F50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60AB18E21F0B8BB9007E3F50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60AB18E31F0B8BB9007E3F50 /* DanTang(单糖) */ = {
+			isa = PBXGroup;
+			children = (
+				60AB18E41F0B8BB9007E3F50 /* Controller */,
+				60AB18E51F0B8BB9007E3F50 /* Model */,
+				60AB18E61F0B8BB9007E3F50 /* View */,
+				60AB18E71F0B8BB9007E3F50 /* ViewModel */,
+			);
+			path = "DanTang(单糖)";
+			sourceTree = "<group>";
+		};
+		60AB18E41F0B8BB9007E3F50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60AB18E51F0B8BB9007E3F50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60AB18E61F0B8BB9007E3F50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60AB18E71F0B8BB9007E3F50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60AB18E81F0B8BB9007E3F50 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				60AB18E91F0B8BB9007E3F50 /* Controller */,
+				60AB18EA1F0B8BB9007E3F50 /* Model */,
+				60AB18EB1F0B8BB9007E3F50 /* View */,
+				60AB18EC1F0B8BB9007E3F50 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		60AB18E91F0B8BB9007E3F50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60AB18EA1F0B8BB9007E3F50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60AB18EB1F0B8BB9007E3F50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60AB18EC1F0B8BB9007E3F50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60AB18ED1F0B8BB9007E3F50 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				60AB18EE1F0B8BB9007E3F50 /* Controller */,
+				60AB18EF1F0B8BB9007E3F50 /* Model */,
+				60AB18F01F0B8BB9007E3F50 /* View */,
+				60AB18F11F0B8BB9007E3F50 /* ViewModel */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		60AB18EE1F0B8BB9007E3F50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60AB18EF1F0B8BB9007E3F50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60AB18F01F0B8BB9007E3F50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60AB18F11F0B8BB9007E3F50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60AB18F21F0B8BB9007E3F50 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		60AB18F31F0B8BB9007E3F50 /* Product(单品) */ = {
+			isa = PBXGroup;
+			children = (
+				60AB18F41F0B8BB9007E3F50 /* Controller */,
+				60AB18F51F0B8BB9007E3F50 /* Model */,
+				60AB18F61F0B8BB9007E3F50 /* View */,
+				60AB18F71F0B8BB9007E3F50 /* ViewModel */,
+			);
+			path = "Product(单品)";
+			sourceTree = "<group>";
+		};
+		60AB18F41F0B8BB9007E3F50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60AB18F51F0B8BB9007E3F50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60AB18F61F0B8BB9007E3F50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60AB18F71F0B8BB9007E3F50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60AB18F81F0B8BB9007E3F50 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +494,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60AB18B01F0B81A8007E3F50 /* ViewController.swift in Sources */,
-				60AB18AE1F0B81A8007E3F50 /* AppDelegate.swift in Sources */,
+				60AB18FD1F0B8BDF007E3F50 /* ViewController.swift in Sources */,
+				60AB18FA1F0B8BB9007E3F50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +746,7 @@
 				60AB18D41F0B81A8007E3F50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60AB18D51F0B81A8007E3F50 /* Build configuration list for PBXNativeTarget "DanTangdemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +755,7 @@
 				60AB18D71F0B81A8007E3F50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60AB18D81F0B81A8007E3F50 /* Build configuration list for PBXNativeTarget "DanTangdemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +764,7 @@
 				60AB18DA1F0B81A8007E3F50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
