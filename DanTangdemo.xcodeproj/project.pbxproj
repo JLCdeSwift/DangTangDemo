@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		263B2CCBE9273EC668ACCC8C /* Pods_DanTangdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E60C4C8C33CC5BCF8F0C9 /* Pods_DanTangdemo.framework */; };
+		608A902A1F0CD30400EF9352 /* LCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A90291F0CD30400EF9352 /* LCBaseViewController.swift */; };
+		608A902C1F0CD32600EF9352 /* LCTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A902B1F0CD32600EF9352 /* LCTabBarViewController.swift */; };
+		608A902E1F0CD35300EF9352 /* LCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A902D1F0CD35300EF9352 /* LCNavigationController.swift */; };
+		608A90301F0CD3C800EF9352 /* LCDanTangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A902F1F0CD3C800EF9352 /* LCDanTangViewController.swift */; };
+		608A90341F0CD4AA00EF9352 /* LCCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A90331F0CD4AA00EF9352 /* LCCategoryViewController.swift */; };
+		608A90361F0CD4C000EF9352 /* LCProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A90351F0CD4C000EF9352 /* LCProductViewController.swift */; };
+		608A90381F0CD4E700EF9352 /* LCMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A90371F0CD4E700EF9352 /* LCMeViewController.swift */; };
+		608A903F1F0CD81D00EF9352 /* LCConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A903E1F0CD81D00EF9352 /* LCConst.swift */; };
+		608A90931F0CDD3A00EF9352 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 608A90921F0CDD3A00EF9352 /* Info.plist */; };
+		608A90951F0CDF0900EF9352 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A90941F0CDF0900EF9352 /* UIView+Extension.swift */; };
 		60AB18B31F0B81A8007E3F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B11F0B81A8007E3F50 /* Main.storyboard */; };
 		60AB18B51F0B81A8007E3F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B41F0B81A8007E3F50 /* Assets.xcassets */; };
 		60AB18B81F0B81A8007E3F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B61F0B81A8007E3F50 /* LaunchScreen.storyboard */; };
@@ -15,6 +25,9 @@
 		60AB18CE1F0B81A8007E3F50 /* DanTangdemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18CD1F0B81A8007E3F50 /* DanTangdemoUITests.swift */; };
 		60AB18FA1F0B8BB9007E3F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18DD1F0B8BB9007E3F50 /* AppDelegate.swift */; };
 		60AB18FD1F0B8BDF007E3F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18FC1F0B8BDF007E3F50 /* ViewController.swift */; };
+		60AB18FF1F0C8DE8007E3F50 /* LCCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18FE1F0C8DE8007E3F50 /* LCCollection.swift */; };
+		60AB19011F0C94EC007E3F50 /* LCCollectionPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB19001F0C94EC007E3F50 /* LCCollectionPost.swift */; };
+		60AB19031F0C9516007E3F50 /* LCGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB19021F0C9516007E3F50 /* LCGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +48,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		608A90291F0CD30400EF9352 /* LCBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCBaseViewController.swift; sourceTree = "<group>"; };
+		608A902B1F0CD32600EF9352 /* LCTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCTabBarViewController.swift; sourceTree = "<group>"; };
+		608A902D1F0CD35300EF9352 /* LCNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCNavigationController.swift; sourceTree = "<group>"; };
+		608A902F1F0CD3C800EF9352 /* LCDanTangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCDanTangViewController.swift; sourceTree = "<group>"; };
+		608A90331F0CD4AA00EF9352 /* LCCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCCategoryViewController.swift; sourceTree = "<group>"; };
+		608A90351F0CD4C000EF9352 /* LCProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCProductViewController.swift; sourceTree = "<group>"; };
+		608A90371F0CD4E700EF9352 /* LCMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCMeViewController.swift; sourceTree = "<group>"; };
+		608A903E1F0CD81D00EF9352 /* LCConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCConst.swift; sourceTree = "<group>"; };
+		608A90921F0CDD3A00EF9352 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DanTangdemo/Info.plist; sourceTree = SOURCE_ROOT; };
+		608A90941F0CDF0900EF9352 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		60AB18AA1F0B81A8007E3F50 /* DanTangdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanTangdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AB18B21F0B81A8007E3F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		60AB18B41F0B81A8007E3F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60AB18B41F0B81A8007E3F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		60AB18B71F0B81A8007E3F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		60AB18B91F0B81A8007E3F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60AB18BE1F0B81A8007E3F50 /* DanTangdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanTangdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AB18C21F0B81A8007E3F50 /* DanTangdemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTangdemoTests.swift; sourceTree = "<group>"; };
 		60AB18C41F0B81A8007E3F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +70,9 @@
 		60AB18CF1F0B81A8007E3F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60AB18DD1F0B8BB9007E3F50 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60AB18FC1F0B8BDF007E3F50 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60AB18FE1F0C8DE8007E3F50 /* LCCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCCollection.swift; sourceTree = "<group>"; };
+		60AB19001F0C94EC007E3F50 /* LCCollectionPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCCollectionPost.swift; sourceTree = "<group>"; };
+		60AB19021F0C9516007E3F50 /* LCGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCGroup.swift; sourceTree = "<group>"; };
 		68D01E8438B10804F50BE6F7 /* Pods-DanTangdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTangdemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTangdemo/Pods-DanTangdemo.release.xcconfig"; sourceTree = "<group>"; };
 		8358D0F2AB50397B226D2FB9 /* Pods-DanTangdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTangdemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanTangdemo/Pods-DanTangdemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F17E60C4C8C33CC5BCF8F0C9 /* Pods_DanTangdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanTangdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +104,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		608A903B1F0CD76100EF9352 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				608A90941F0CDF0900EF9352 /* UIView+Extension.swift */,
+			);
+			name = Category;
+			path = Controller/Category;
+			sourceTree = "<group>";
+		};
+		608A903C1F0CD76100EF9352 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				608A903E1F0CD81D00EF9352 /* LCConst.swift */,
+			);
+			name = Tools;
+			path = Controller/Tools;
+			sourceTree = "<group>";
+		};
 		60AB18A11F0B81A8007E3F50 = {
 			isa = PBXGroup;
 			children = (
@@ -106,9 +149,7 @@
 			children = (
 				60AB18DB1F0B8BB9007E3F50 /* Classes */,
 				60AB18B11F0B81A8007E3F50 /* Main.storyboard */,
-				60AB18B41F0B81A8007E3F50 /* Assets.xcassets */,
 				60AB18B61F0B81A8007E3F50 /* LaunchScreen.storyboard */,
-				60AB18B91F0B81A8007E3F50 /* Info.plist */,
 			);
 			path = DanTangdemo;
 			sourceTree = "<group>";
@@ -135,13 +176,14 @@
 			isa = PBXGroup;
 			children = (
 				60AB18DC1F0B8BB9007E3F50 /* AppDelegate */,
+				60AB18E81F0B8BB9007E3F50 /* Main */,
 				60AB18DE1F0B8BB9007E3F50 /* Classify(分类) */,
 				60AB18E31F0B8BB9007E3F50 /* DanTang(单糖) */,
-				60AB18E81F0B8BB9007E3F50 /* Main */,
+				60AB18F31F0B8BB9007E3F50 /* Product(单品) */,
 				60AB18ED1F0B8BB9007E3F50 /* Me(我) */,
 				60AB18F21F0B8BB9007E3F50 /* Others */,
-				60AB18F31F0B8BB9007E3F50 /* Product(单品) */,
 				60AB18F81F0B8BB9007E3F50 /* Resource */,
+				60AB18B41F0B81A8007E3F50 /* Assets.xcassets */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -169,6 +211,7 @@
 		60AB18DF1F0B8BB9007E3F50 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				608A90331F0CD4AA00EF9352 /* LCCategoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +219,9 @@
 		60AB18E01F0B8BB9007E3F50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				60AB18FE1F0C8DE8007E3F50 /* LCCollection.swift */,
+				60AB19001F0C94EC007E3F50 /* LCCollectionPost.swift */,
+				60AB19021F0C9516007E3F50 /* LCGroup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +254,7 @@
 		60AB18E41F0B8BB9007E3F50 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				608A902F1F0CD3C800EF9352 /* LCDanTangViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -236,10 +283,9 @@
 		60AB18E81F0B8BB9007E3F50 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				608A903B1F0CD76100EF9352 /* Category */,
+				608A903C1F0CD76100EF9352 /* Tools */,
 				60AB18E91F0B8BB9007E3F50 /* Controller */,
-				60AB18EA1F0B8BB9007E3F50 /* Model */,
-				60AB18EB1F0B8BB9007E3F50 /* View */,
-				60AB18EC1F0B8BB9007E3F50 /* ViewModel */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -247,29 +293,11 @@
 		60AB18E91F0B8BB9007E3F50 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				608A90291F0CD30400EF9352 /* LCBaseViewController.swift */,
+				608A902B1F0CD32600EF9352 /* LCTabBarViewController.swift */,
+				608A902D1F0CD35300EF9352 /* LCNavigationController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		60AB18EA1F0B8BB9007E3F50 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		60AB18EB1F0B8BB9007E3F50 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		60AB18EC1F0B8BB9007E3F50 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		60AB18ED1F0B8BB9007E3F50 /* Me(我) */ = {
@@ -286,6 +314,7 @@
 		60AB18EE1F0B8BB9007E3F50 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				608A90371F0CD4E700EF9352 /* LCMeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,6 +343,7 @@
 		60AB18F21F0B8BB9007E3F50 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				608A90921F0CDD3A00EF9352 /* Info.plist */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -332,6 +362,7 @@
 		60AB18F41F0B8BB9007E3F50 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				608A90351F0CD4C000EF9352 /* LCProductViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -446,9 +477,10 @@
 		60AB18A21F0B81A8007E3F50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LC;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "冀柳冲";
+				ORGANIZATIONNAME = "sunny冲哥";
 				TargetAttributes = {
 					60AB18A91F0B81A8007E3F50 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -496,6 +528,7 @@
 			files = (
 				60AB18B81F0B81A8007E3F50 /* LaunchScreen.storyboard in Resources */,
 				60AB18B51F0B81A8007E3F50 /* Assets.xcassets in Resources */,
+				608A90931F0CDD3A00EF9352 /* Info.plist in Resources */,
 				60AB18B31F0B81A8007E3F50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,7 +618,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				608A902C1F0CD32600EF9352 /* LCTabBarViewController.swift in Sources */,
+				608A90361F0CD4C000EF9352 /* LCProductViewController.swift in Sources */,
+				60AB19031F0C9516007E3F50 /* LCGroup.swift in Sources */,
+				608A90381F0CD4E700EF9352 /* LCMeViewController.swift in Sources */,
+				608A90301F0CD3C800EF9352 /* LCDanTangViewController.swift in Sources */,
+				608A902E1F0CD35300EF9352 /* LCNavigationController.swift in Sources */,
+				608A903F1F0CD81D00EF9352 /* LCConst.swift in Sources */,
+				60AB18FF1F0C8DE8007E3F50 /* LCCollection.swift in Sources */,
+				608A90951F0CDF0900EF9352 /* UIView+Extension.swift in Sources */,
+				608A90341F0CD4AA00EF9352 /* LCCategoryViewController.swift in Sources */,
 				60AB18FD1F0B8BDF007E3F50 /* ViewController.swift in Sources */,
+				60AB19011F0C94EC007E3F50 /* LCCollectionPost.swift in Sources */,
+				608A902A1F0CD30400EF9352 /* LCBaseViewController.swift in Sources */,
 				60AB18FA1F0B8BB9007E3F50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
