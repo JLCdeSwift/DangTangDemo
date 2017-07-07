@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="homecell" id="KGk-i7-Jjw" customClass="LCHomeCell" customModule="DanTangdemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uuJ-bW-LfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz3-qf-9fi">
+                        <rect key="frame" x="5" y="132.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a14-u1-hKU">
+                        <rect key="frame" x="282" y="10" width="28" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="RgK-B6-g9Y"/>
+                        </constraints>
+                        <state key="normal" title="0" image="Feed_FavoriteIcon_17x17_">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uuJ-bW-LfQ" secondAttribute="bottom" id="4OC-Kr-wb3"/>
+                    <constraint firstItem="a14-u1-hKU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EKb-c2-QoX"/>
+                    <constraint firstItem="Qz3-qf-9fi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="GPC-Bk-AU5"/>
+                    <constraint firstAttribute="trailing" secondItem="a14-u1-hKU" secondAttribute="trailing" constant="10" id="SiV-J1-u7V"/>
+                    <constraint firstItem="uuJ-bW-LfQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Z17-dm-77n"/>
+                    <constraint firstAttribute="bottom" secondItem="Qz3-qf-9fi" secondAttribute="bottom" constant="6" id="ahg-mo-glz"/>
+                    <constraint firstItem="uuJ-bW-LfQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hQk-C1-S4e"/>
+                    <constraint firstAttribute="trailing" secondItem="uuJ-bW-LfQ" secondAttribute="trailing" id="k0c-G6-W31"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="uuJ-bW-LfQ" id="lAf-yN-9Cb"/>
+                <outlet property="praiseBtn" destination="a14-u1-hKU" id="mNt-5X-Qef"/>
+                <outlet property="titleLabel" destination="Qz3-qf-9fi" id="7Kf-c2-0XU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Feed_FavoriteIcon_17x17_" width="17" height="17"/>
+    </resources>
+</document>

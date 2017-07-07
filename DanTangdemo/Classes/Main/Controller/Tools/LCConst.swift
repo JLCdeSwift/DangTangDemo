@@ -4,10 +4,16 @@
 //
 //  Created by 冀柳冲 on 2017/7/5.
 //  Copyright © 2017年 sunny冲哥. All rights reserved.
-//
+// 类似OC中的pch文件
 
 import Foundation
 import UIKit
+import Kingfisher
+import SwiftyJSON
+import ReactiveSwift
+import SnapKit
+
+
 
 enum LCTopicType: Int {
     /// 精选
@@ -114,3 +120,15 @@ let isIPhone5 = SCREENH == 568 ? true : false
 let isIPhone6 = SCREENH == 667 ? true : false
 /// iPhone 6P
 let isIPhone6P = SCREENH == 736 ? true : false
+
+
+//设置圆角
+
+func ViewBorder(view:UIView,radius:CGFloat)  {
+    view.layer.cornerRadius = radius
+    view.layer.masksToBounds = true
+    view.layer.rasterizationScale = UIScreen.main.scale
+    view.layer.shouldRasterize = true
+}
+
+

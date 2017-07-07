@@ -12,7 +12,7 @@ class LCCategoryViewController: LCBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.red
         // Do any additional setup after loading the view.
     }
 

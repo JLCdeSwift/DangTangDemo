@@ -12,6 +12,7 @@ class LCProductViewController: LCBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.lightGray
 
         // Do any additional setup after loading the view.
     }

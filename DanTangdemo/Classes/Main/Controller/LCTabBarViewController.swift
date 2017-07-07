@@ -15,18 +15,25 @@ class LCTabBarViewController: UITabBarController {
         let tabBar = UITabBar.appearance()
         tabBar.tintColor = UIColorFromRGB(rgbValue: 0xf55a5d)
         
-        
+        self.addChildViewControllers()
         // Do any additional setup after loading the view.
     }
 
     //添加子控制器
-    func addChildViewControllers() {
-        
+    private  func addChildViewControllers() {
+        addChildViewController(controller: LCDanTangViewController(), title: "单糖", imageName: "TabBar_home_23x23_")
+        addChildViewController(controller: LCProductViewController(), title: "单品", imageName: "TabBar_gift_23x23_")
+        addChildViewController(controller: LCCategoryViewController(), title: "分类", imageName: "TabBar_category_23x23_")
+        addChildViewController(controller: LCMeViewController(), title: "我", imageName: "TabBar_me_boy_23x23_")
     }
     
     //添加子控制器(初始化)
-    func addChildViewController(controller:UIViewController,title:String,imageName:String) {
-        
+   private func addChildViewController(controller:UIViewController,title:String,imageName:String) {
+        controller.tabBarItem.title = title
+    controller.tabBarItem.image = UIImage.init(named: imageName)
+    controller.tabBarItem.selectedImage = UIImage.init(named: imageName + "selected")
+    let nav = LCNavigationController.init(rootViewController: controller)
+    addChildViewController(nav)
     }
     
     override func didReceiveMemoryWarning() {
