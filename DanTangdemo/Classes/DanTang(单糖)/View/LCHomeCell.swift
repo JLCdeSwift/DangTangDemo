@@ -8,7 +8,7 @@
 
 import UIKit
 
-//typealias Block = (UIButton)->()
+typealias Block = ()->()
 
 
 class LCHomeCell: UITableViewCell {
@@ -20,13 +20,13 @@ class LCHomeCell: UITableViewCell {
     
     @IBOutlet weak var praiseBtn: UIButton!
     
-    //var btnBlock : Block?
+    var btnBlock : Block?
     
     
-    func btnBlock(sender:UIButton,completed:() -> ()) {
-        completed()
-        
-    }
+//    func btnBlock(sender:UIButton,completed:() -> ()) {
+//        completed()
+//        
+//    }
     
     
     
@@ -37,7 +37,9 @@ class LCHomeCell: UITableViewCell {
             bgImageView.kf.setImage(with: URL(string: url!)!, placeholder: nil, options: nil, progressBlock: nil) { (image, error, cacheType, imageURL) in
             }
            titleLabel.text = homeItem?.title
-            praiseBtn.setTitle("" + String(describing: homeItem?.likes_count) + "", for: UIControlState.normal)
+            
+            
+            praiseBtn.setTitle("" + String(format:"%d",homeItem!.likes_count!) + "", for: UIControlState.normal)
             
         }
         
@@ -48,14 +50,12 @@ class LCHomeCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        praiseBtn.addTarget(self, action: Selector(("praiseBtnClicked:")), for: .touchUpInside)
+        praiseBtn.addTarget(self, action: #selector(praiseBtnClicked(sender:)), for: .touchUpInside)
         
         
     }
     func praiseBtnClicked(sender:UIButton) {
-        btnBlock(sender: sender) {
-            
-        }
+       // btnBlock!()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

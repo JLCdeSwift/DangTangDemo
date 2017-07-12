@@ -33,6 +33,9 @@
 		608A914E1F0F247800EF9352 /* LCMeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A914D1F0F247800EF9352 /* LCMeHeaderView.swift */; };
 		608A91511F0F249A00EF9352 /* LCSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A914F1F0F249A00EF9352 /* LCSettingCell.swift */; };
 		608A91521F0F249A00EF9352 /* LCSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 608A91501F0F249A00EF9352 /* LCSettingCell.xib */; };
+		60A9672D1F14A1CA00013326 /* LCTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9672C1F14A1CA00013326 /* LCTopicViewController.swift */; };
+		60A9672F1F14A1DB00013326 /* LCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9672E1F14A1DB00013326 /* LCDetailViewController.swift */; };
+		60A967311F14ADE300013326 /* LCNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A967301F14ADE300013326 /* LCNetWorkManager.swift */; };
 		60AB18B51F0B81A8007E3F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B41F0B81A8007E3F50 /* Assets.xcassets */; };
 		60AB18B81F0B81A8007E3F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AB18B61F0B81A8007E3F50 /* LaunchScreen.storyboard */; };
 		60AB18C31F0B81A8007E3F50 /* DanTangdemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB18C21F0B81A8007E3F50 /* DanTangdemoTests.swift */; };
@@ -86,6 +89,9 @@
 		608A914D1F0F247800EF9352 /* LCMeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCMeHeaderView.swift; sourceTree = "<group>"; };
 		608A914F1F0F249A00EF9352 /* LCSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCSettingCell.swift; sourceTree = "<group>"; };
 		608A91501F0F249A00EF9352 /* LCSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCSettingCell.xib; sourceTree = "<group>"; };
+		60A9672C1F14A1CA00013326 /* LCTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCTopicViewController.swift; sourceTree = "<group>"; };
+		60A9672E1F14A1DB00013326 /* LCDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCDetailViewController.swift; sourceTree = "<group>"; };
+		60A967301F14ADE300013326 /* LCNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCNetWorkManager.swift; sourceTree = "<group>"; };
 		60AB18AA1F0B81A8007E3F50 /* DanTangdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanTangdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AB18B41F0B81A8007E3F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		60AB18B71F0B81A8007E3F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				608A903E1F0CD81D00EF9352 /* LCConst.swift */,
+				60A967301F14ADE300013326 /* LCNetWorkManager.swift */,
 			);
 			name = Tools;
 			path = Controller/Tools;
@@ -288,6 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				608A902F1F0CD3C800EF9352 /* LCDanTangViewController.swift */,
+				60A9672C1F14A1CA00013326 /* LCTopicViewController.swift */,
+				60A9672E1F14A1DB00013326 /* LCDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -668,6 +677,7 @@
 				608A90361F0CD4C000EF9352 /* LCProductViewController.swift in Sources */,
 				60AB19031F0C9516007E3F50 /* LCGroup.swift in Sources */,
 				608A909F1F0DDC5B00EF9352 /* LCSearchResult.swift in Sources */,
+				60A9672F1F14A1DB00013326 /* LCDetailViewController.swift in Sources */,
 				608A90381F0CD4E700EF9352 /* LCMeViewController.swift in Sources */,
 				608A913C1F0E335D00EF9352 /* LCSettings.swift in Sources */,
 				608A90301F0CD3C800EF9352 /* LCDanTangViewController.swift in Sources */,
@@ -678,6 +688,8 @@
 				608A91511F0F249A00EF9352 /* LCSettingCell.swift in Sources */,
 				608A914C1F0F246000EF9352 /* LCMeFooterView.swift in Sources */,
 				608A90951F0CDF0900EF9352 /* UIView+Extension.swift in Sources */,
+				60A967311F14ADE300013326 /* LCNetWorkManager.swift in Sources */,
+				60A9672D1F14A1CA00013326 /* LCTopicViewController.swift in Sources */,
 				608A91451F0E33A200EF9352 /* LCRefreshView.swift in Sources */,
 				608A90341F0CD4AA00EF9352 /* LCCategoryViewController.swift in Sources */,
 				60AB19011F0C94EC007E3F50 /* LCCollectionPost.swift in Sources */,

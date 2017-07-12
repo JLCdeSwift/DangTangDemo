@@ -8,10 +8,19 @@
 
 import UIKit
 
+typealias BLOCK = () -> ()
+
+
+
 class LCMeFooterView: UIView {
 
+    var clickedBlock : BLOCK?
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -53,18 +62,21 @@ class LCMeFooterView: UIView {
     
     private lazy var messageLabel: UILabel = {
         let messageLabel = UILabel()
-        messageLabel.text = "登录以享受功能"
+        messageLabel.text = "登录以享受更多功能"
         messageLabel.textAlignment = .center
-        messageLabel.font = UIFont.systemFont(ofSize: 15)
+        messageLabel.font = UIFont.systemFont(ofSize: 14)
         messageLabel.textColor = LCColor(r: 200, g: 200, b: 200, a: 1.0)
+        //messageLabel.addTarget(self, action: #selector(footerViewButtonClick), for: .touchUpInside)
+        
+        var tap = UITapGestureRecognizer.init(target: self, action: #selector(footerViewButtonClick))
+        messageLabel.isUserInteractionEnabled = true
+        messageLabel.addGestureRecognizer(tap)
+        
         return messageLabel
     }()
     
-    
     func footerViewButtonClick() {
-//        let nav = LCNavigationController(rootViewController: LCLoginViewController())
-//        UIApplication.shared.keyWindow?.rootViewController?.present(nav, animated: true, completion: nil)
+        clickedBlock!()
     }
-
     
 }

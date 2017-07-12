@@ -8,10 +8,6 @@
 
 import Foundation
 import UIKit
-import Kingfisher
-import SwiftyJSON
-import ReactiveSwift
-import SnapKit
 
 
 
@@ -131,4 +127,10 @@ func ViewBorder(view:UIView,radius:CGFloat)  {
     view.layer.shouldRasterize = true
 }
 
+import Kingfisher
+import SwiftyJSON
+import ReactiveSwift
+import SnapKit
+import Alamofire
+import SVProgressHUD
 
